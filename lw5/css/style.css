@@ -1,0 +1,172 @@
+.header__logo
+{
+    font: 700 31px normal;
+    font-family: 'Montserrat';
+	letter-spacing: -0.045em;
+	color: #000;
+}
+
+.header__logo_extra,
+.main__top_logo_text_extra,
+.main__bottom_middle_newtitle_extra,
+.main__last_text_extra
+{
+	color: #ff00b3;
+}
+
+.header__cross-heading_text
+{
+    font: 500 16px normal;
+    font-family: 'Montserrat';
+    color: #000;
+}
+
+.header__button
+{
+    padding: 3px;
+    width: 243px;
+    background: #05090c;
+    border-radius: 5px;
+}
+
+.header__button_text
+{
+    font: 600 16px normal;
+    font-family: 'Montserrat';
+    text-align: center;
+    color: #fff;
+}
+
+.main__top_logo_text
+{
+    font: 600 100px normal;
+    font-family: 'Montserrat';
+    color: #000;
+}
+
+.main__top_description_text
+{
+    font: 400 26px normal;
+    font-family: 'Roboto Condensed';
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.main__top_button
+{
+    padding: 3px;
+    width: 328px;
+    background: #05090c;
+    border-radius: 5px;
+}
+
+.main__top_button_text
+{  
+    font: 600 16px normal;
+    font-family: 'Montserrat';
+    text-align: center;
+    color: #fff;  
+}
+
+.main__top_image_title
+{
+    width: 30.6%;
+}
+
+.main__top_info
+{
+    width: 1920px;
+    height: 398px;
+    background: #000;
+    padding-bottom: 80px;
+}
+
+.main__top_info_image
+{
+    width: 3.2%;
+}
+
+.main__top_info_text
+{ 
+    font: 400 22px normal;
+    font-family: 'Roboto Condensed';
+    color: #fff;
+}
+
+.main__bottom_header_image
+{
+    width: 21.5%;
+}
+
+.main__bottom_header_title
+{
+    font: 500 48px normal;
+    font-family: 'Montserrat';
+    color: #000;
+}
+
+.main__bottom_header_text
+{
+    font: 400 18px normal;
+    font-family: 'Roboto Condensed';
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.main__bottom_middle_image
+{
+    width: 20.3%;
+}
+
+.main__bottom_middle_title
+{
+    font: 500 48px normal;
+    font-family: 'Montserrat';
+    color: #000;
+}
+
+.main__bottom_middle_text
+{
+    font: 400 18px normal;
+    font-family: 'Roboto Condensed';
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.main__bottom_middle_newtitle
+{
+    font: 500 48px normal;
+    font-family: 'Montserrat';
+    color: #000;
+}
+
+.main__bottom_box
+{
+    width: 358px;
+    height: 190px;
+    background: #000;
+    border-radius: 7px;
+}
+
+.main__bottom_box_image
+{
+    height: 25.5%;
+}
+
+.main__bottom_box_text
+{
+    font: 400 18px normal;
+    font-family: 'Roboto Condensed';
+    color: #fff;
+}
+
+.main__last
+{
+    width: 1920px;
+    height: 108px;
+    background: #000;
+}
+
+.main__last_text
+{
+    font: 700 31px normal;
+    font-family: 'Montserrat';
+    color: #fff;
+}
