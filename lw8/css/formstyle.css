@@ -1,0 +1,121 @@
+.main__menu
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px auto -130px;
+}
+
+.main__menu_header
+{
+    position: relative;
+    margin: 70px 25px 0 0;
+}
+
+.main__menu-image
+{
+    max-width: 330px;
+    width: 100%;
+}
+
+.main__menu-title
+{
+    font: 500 26px 'Montserrat';
+    position: relative;
+    margin: -5px 0 0 42px;
+}
+
+.main__menu_form
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+    margin: 30px 95px 0 0;
+}
+
+.main__menu_form_activity
+{
+    overflow: hidden;
+}
+
+.main__menu_form-name,
+.main__menu_form-email,
+.main__menu_form-activity
+{
+    position: relative;
+    min-height: 64px;
+    margin: 0 0 20px 100px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    padding-left: 20px;
+    font: 450 16px 'Montserrat';
+    color: rgba(0, 0, 0, 0.7);
+    appearance: none;
+}
+
+.main__menu_checkbox
+{
+    margin-left: 105px;
+}
+
+.main__menu-checkbox
+{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.main__menu-checkbox+label::before
+{
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.main__menu-checkbox:checked+label::before
+{
+    border-color: #ee58b6;
+    background-color: #ee58b6;
+}
+
+.main__menu-checkbox-text
+{
+    display: flex;
+    align-items: center;
+    font: 400 11px 'Montserrat';
+    letter-spacing: -0.01cm;
+}
+
+.main__menu-checkbox-image
+{
+    position: absolute;
+    margin-top: -14px 0 0 2px;
+    width: 15px;
+    height: 10px;
+}
+
+.main__menu_button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #05090c;
+    border-radius: 5px;
+    max-width: 380px;
+    width: 100%;
+    margin: 35px 0 0 102px;
+}
+
+.main__menu_button-text
+{
+    color: #fff;
+    font: 400 16px 'Montserrat';
+}

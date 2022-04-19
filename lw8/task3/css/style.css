@@ -1,0 +1,35 @@
+.header
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 52px 95px 0 59px;
+    min-height: 64px;
+}
+
+.header-form
+{
+    max-width: 480px;
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    padding-left: 20px;
+    margin-right: 50px;
+    font: 450 16px 'Montserrat';
+    color: rgba(0, 0, 0, 0.7);
+    appearance: none;
+}
+
+.header-button
+{
+    background-color: #05090c;
+    border-radius: 5px;
+    max-width: 480px;
+    width: 100%;
+}
+
+.header-button-text
+{
+    color: #fff;
+    font: 400 16px 'Montserrat';
+}
