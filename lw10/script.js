@@ -1,44 +1,36 @@
-const openPopUpOne = document.getElementById('open_pop-up-1');
-const openPopUpTwo = document.getElementById('open_pop-up-2');
-const popUpClose = document.getElementById('pop-up_close');
-const popUp = document.getElementById('pop-up');
-const popUpBackGr = document.getElementById('pop-up-background');
-let check = 0;
+const openPopUp = document.getElementsByClassName('open-pop-up');
+const popUpClose = document.getElementById('popUpClose');
+const popUp = document.getElementById('popUp');
+const popUpBackGr = document.getElementById('popUpBackground');
+const popUpBody = document.getElementById('popUpBody');
 
-openPopUpOne.addEventListener('click', function(e) {
-    e.preventDefault();
-    popUp.classList.add('active');
-    popUpBackGr.classList.add('active');
-});
-
-openPopUpTwo.addEventListener('click', function(e) {
-    e.preventDefault();
-    popUp.classList.add('active');
-    popUpBackGr.classList.add('active');
-});
+for (let i = 0; i < openPopUp.length; i++) {
+    openPopUp[i].addEventListener('click', function(e) {
+        popUp.classList.add('pop-up_active');
+        popUpBackGr.classList.add('pop-up-background_active');
+        popUpBody.classList.add('pop-up_body_active');
+    });
+}
 
 popUpClose.addEventListener('click', function() {
-    popUp.classList.remove('active');
-    popUpBackGr.classList.remove('active');
+    popUp.classList.remove('pop-up_active');
+    popUpBackGr.classList.remove('pop-up-background_active');
+    popUpBody.classList.remove('pop-up_body_active');
 });
 
 document.addEventListener('keydown', function(e) {
     if(e.keyCode === 27) 
     {
-        popUp.classList.remove('active');
-        popUpBackGr.classList.remove('active');
+        popUp.classList.remove('pop-up_active');
+        popUpBackGr.classList.remove('pop-up-background_active');
+        popUpBody.classList.remove('pop-up_body_active');
     }
 });
 
-document.addEventListener('click', function(e) {
-    let x = event.clientX;
-    let y = event.clientY;
-    console.log(x, y)
-    check++;
-    if ( !(y > 247 && y < 1050 && x > 654 && x < 1294) && (y !== 0 && x !== 0) && (check > 1)) 
-    {
-        popUp.classList.remove('active');
-        popUpBackGr.classList.remove('active');
-        check = 0;
+popUpBackGr.addEventListener('click', function(e) {
+    if (e.target === popUpBackGr) {
+        popUp.classList.remove('pop-up_active');
+        popUpBackGr.classList.remove('pop-up-background_active');
+        popUpBody.classList.remove('pop-up_body_active');
     }
 })

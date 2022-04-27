@@ -11,6 +11,10 @@
     background-color: #fff;
     border-radius: 10px;
     padding-bottom: 50px;
+    transform: scale(50%);
+    transition: 0.25s ease-in-out;
+    z-index: 3;
+    opacity: 0;
 }
 
 .pop-up_header
@@ -138,12 +142,6 @@
     transition: 0.25s ease-in-out;
 }
 
-.pop-up-background.active
-{
-    z-index: 1;
-    opacity: 1;
-}
-
 .pop-up
 {
     width: 100%;
@@ -151,13 +149,24 @@
     left: 0;
     top: 0;
     position: fixed;
-    z-index: 2;
-    transform: scale(50%);
-    transition: 0.25s ease-in-out;
+    z-index: 0;
     opacity: 0;
+    transition: 0.25s ease-in-out;
 }
 
-.pop-up.active
+.pop-up-background_active
+{
+    z-index: 2;
+    opacity: 1;
+}
+
+.pop-up_active
+{
+    opacity: 1;
+    z-index: 1;
+}
+
+.pop-up_body_active
 {
     transform: scale(100%);
     opacity: 1;
