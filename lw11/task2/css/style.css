@@ -1,0 +1,67 @@
+.header
+{
+    position: relative;
+}
+
+.header-button
+{
+    background-color: black;
+    border-radius: 7px;
+    margin: 26px 0 0 111px;
+    max-width: 380px;
+    min-height: 64px;
+    width: 100%;
+}
+
+.header-button-text
+{
+    color: white;
+    font: 100 18px 'Montserrat';
+}
+
+.block-set
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 50px;
+}
+
+.block-set_block
+{
+    background-color: black;
+    position: relative;
+    border-radius: 12px;
+    margin: 50px 0 50px 111px;
+    max-width: 372px;
+    width: 100%;
+    min-height: 288px;
+    color: white;
+    font: 100 18px 'Montserrat';
+}
+
+.block-set_block-avatar
+{
+    margin: 48px 0 0 31px;
+}
+
+.block-set_block-text
+{
+    margin-left: 31px;
+    max-height: 15px;
+}
+
+.error-message
+{
+    opacity: 0;
+    z-index: -1;
+    font: 100 30px 'Montserrat';
+    margin: 50px 0 0 45px;
+}
+
+.error-message_active
+{
+    opacity: 1;
+    z-index: 0;
+}
