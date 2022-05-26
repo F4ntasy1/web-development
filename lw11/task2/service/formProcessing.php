@@ -4,13 +4,8 @@ require_once("./modules/common.inc.php");
 
 $datagives = new DataGives();
 
-$requestloader = new RequestLoader();
+$datagives->createData();
 
-$number = $requestloader->getContent();
+$users = $datagives->getData();
 
-$datagives->createData($number);
-
-$parameters = $datagives->getData();
-
-$number++;
-echo json_encode($parameters);
+echo json_encode($users);

@@ -37,38 +37,41 @@ function addNewBlockUser(userName, userEmail, userActive, userAgreement) {
     blockSet.appendChild(div);
 }
 
-let $number = 0;
 let $checkEmails = false;
+let $checkUsers = false;
 async function createFetch() {
     const response = await fetch('./service/formProcessing.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json;charset=utf-8',
         },
-        body: JSON.stringify($number),
+        body: '',
     });
     const json = await response.json();
-    console.log(json.name, json.email, json.activity, json.agreement, json.document);
-    
-    $number++;
 
-    if (json.document === true)
+    if (json.length > 0)
     {
         errorMsg.classList.remove('error-message_active');
-        if (json.name !== null && json.email !== null && json.activity !== null && json.agreement !== null)
+        $checkUsers = true;
+        for ($i = 0; $i < json.length; $i++)
         {
-            $checkEmails = true;
-            addNewBlockUser(json.name, json.email, json.activity, json.agreement);
+            addNewBlockUser(json[$i].name, json[$i].email, json[$i].activity, json[$i].agreement);
         }
-        createFetch();
     }
-    else if (json.document === false && $checkEmails === false)
+
+    if ($checkUsers === false)
     {
         errorMsg.classList.add('error-message_active');
     }
 }
 
+let buttonClick = 1;
+
 button.addEventListener('click', (event) => {
-    event.preventDefault();
-    createFetch();
+    if (buttonClick === 1)
+    {
+        event.preventDefault();
+        createFetch();
+        buttonClick++;
+    }
 })
